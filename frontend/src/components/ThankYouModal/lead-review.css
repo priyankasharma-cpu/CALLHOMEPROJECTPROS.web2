@@ -1,0 +1,82 @@
+.review-details.premium-review {
+  padding: 7px 22px;
+  border: 1px solid #dce8f1;
+  background: linear-gradient(135deg, #f8fbff, #f6fbf8);
+  border-radius: 19px;
+  margin-bottom: 22px;
+}
+.premium-review > div {
+  display: grid;
+  grid-template-columns: 125px minmax(0, 1fr);
+  gap: 15px;
+  padding: 14px 0;
+  border-bottom: 1px solid #e0e9ef;
+}
+.premium-review > div:last-child {
+  border-bottom: 0;
+}
+.premium-review dt {
+  font-size: 0.75rem;
+  color: #64748b;
+  font-weight: 600;
+}
+.premium-review dd {
+  font-size: 0.86rem;
+  font-weight: 600;
+  margin: 0;
+  overflow-wrap: anywhere;
+  white-space: pre-wrap;
+  line-height: 1.65;
+}
+.submission-error {
+  border: 1px solid #efc8c8;
+  background: #fff8f8;
+  border-radius: 17px;
+  padding: 21px;
+  margin-top: 22px;
+}
+.submission-error h3 {
+  font-size: 1.05rem;
+  margin: 0;
+  color: #8b3039;
+}
+.submission-error p {
+  font-size: 0.82rem;
+  color: #66535a;
+  margin: 9px 0 16px;
+}
+.submission-error > div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+.submission-error .button {
+  font-size: 0.8rem;
+}
+.submission-error .call-cta {
+  flex: 1;
+}
+.form-success > .text-link {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+.form-success h2:focus {
+  outline: none;
+}
+@media (max-width: 500px) {
+  .review-details.premium-review {
+    padding: 5px 15px;
+  }
+  .premium-review > div {
+    grid-template-columns: 1fr;
+    gap: 3px;
+    padding: 12px 0;
+  }
+  .submission-error {
+    padding: 17px;
+  }
+  .submission-error > div {
+    flex-direction: column;
+  }
+}
