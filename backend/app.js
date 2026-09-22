@@ -52,7 +52,7 @@ app.get("/api/health", (req, res) => {
 });
 app.post("/api/leads", limit, validate(leadSchema), submissionController(Lead));
 app.post(
-  "/api/inquiries",
+  ["/api/contact", "/api/inquiries"],
   limit,
   validate(inquirySchema),
   submissionController(Inquiry),

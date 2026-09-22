@@ -153,7 +153,7 @@ export default function ThankYouModal({
           <p>
             {phoneHref
               ? "We're here to help you discuss your home project."
-              : "Phone assistance will be available when our line opens."}
+              : "Explore our service guides for help planning your project."}
           </p>
           <CallCTA
             variant="confirmation"

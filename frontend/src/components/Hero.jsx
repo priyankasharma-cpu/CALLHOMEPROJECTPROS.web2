@@ -17,16 +17,16 @@ export default function Hero() {
             <span className="headline-period" aria-hidden="true" />
           </h1>
           <p>
-            Big ideas. Everyday repairs. A home that works better for you. Start
-            a conversation and take the next step toward the right home service
-            professional.
+            From repairs and replacements to larger improvements, tell us what
+            you need help with. Call our team or share your ZIP code and project
+            details online to take the next step.
           </p>
           <div className="premium-hero-actions">
             <CallCTA variant="hero" location="hero_call" />
             <Link className="hero-quote-link" to="/quote">
               Prefer to start online?{" "}
               <strong>
-                Get Free Quotes <ArrowRight size={18} />
+                Start a Project Request <ArrowRight size={18} />
               </strong>
             </Link>
           </div>

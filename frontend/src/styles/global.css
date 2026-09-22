@@ -65,7 +65,7 @@ h3 {
   letter-spacing: -0.04em;
 }
 h2 {
-  font-size: clamp(1.8rem, 3vw, 2.6rem);
+  font-size: var(--type-h2);
   line-height: 1.25;
   font-weight: 800;
 }
@@ -92,7 +92,7 @@ summary:focus-visible {
   padding-block: 88px;
 }
 .eyebrow {
-  font-size: 0.7rem;
+  font-size: var(--type-meta);
   font-weight: 800;
   letter-spacing: 0.15em;
   color: var(--green);
@@ -112,7 +112,7 @@ summary:focus-visible {
   display: inline-flex;
   align-items: center;
   gap: 10px;
-  font-size: 0.85rem;
+  font-size: var(--type-ui);
   font-weight: 700;
   color: var(--blue);
 }
@@ -127,7 +127,7 @@ summary:focus-visible {
   justify-content: center;
   gap: 15px;
   padding: 14px 23px;
-  font-size: 0.85rem;
+  font-size: var(--type-ui);
   font-weight: 700;
   border: 1px solid transparent;
   transition:
@@ -162,7 +162,7 @@ summary:focus-visible {
   justify-content: center;
   gap: 13px;
   text-align: left;
-  font-size: 0.85rem;
+  font-size: var(--type-ui);
   font-weight: 700;
   box-shadow: 0 5px 14px #0756d815;
   transition:
@@ -172,7 +172,7 @@ summary:focus-visible {
 }
 .call-cta small {
   display: block;
-  font-size: 0.72rem;
+  font-size: var(--type-small);
   letter-spacing: 0.025em;
   font-weight: 500;
   margin-top: 4px;
@@ -188,11 +188,11 @@ summary:focus-visible {
 .call-cta.compact {
   min-height: 46px;
   padding: 9px 17px;
-  font-size: 0.77rem;
+  font-size: var(--type-ui);
   gap: 10px;
 }
 .call-cta.compact small {
-  font-size: 0.6rem;
+  font-size: var(--type-small);
 }
 .call-icon {
   display: flex;
@@ -223,7 +223,7 @@ summary:focus-visible {
 .utility {
   background: #f0f6fa;
   color: #526475;
-  font-size: 0.65rem;
+  font-size: var(--type-meta);
   padding: 10px 0;
   border-bottom: 1px solid #e8eef3;
 }
@@ -307,7 +307,7 @@ summary:focus-visible {
   gap: 25px;
   flex: 1;
   justify-content: center;
-  font-size: 0.73rem;
+  font-size: var(--type-ui);
   font-weight: 600;
 }
 .nav-links > a {
@@ -352,14 +352,14 @@ summary:focus-visible {
   justify-content: space-between;
   padding-bottom: 20px;
   border-bottom: 1px solid var(--border);
-  font-size: 1rem;
+  font-size: var(--type-ui);
 }
 .mega-heading a {
   display: flex;
   align-items: center;
   gap: 10px;
   color: var(--blue);
-  font-size: 0.8rem;
+  font-size: var(--type-ui);
 }
 .mega-columns {
   display: grid;
@@ -398,7 +398,7 @@ summary:focus-visible {
   margin-bottom: 22px;
 }
 .hero h1 {
-  font-size: clamp(2.65rem, 4.05vw, 4.15rem);
+  font-size: var(--type-h1);
   font-weight: 800;
   line-height: 1.14;
   letter-spacing: -0.065em;
@@ -420,7 +420,7 @@ summary:focus-visible {
   background: linear-gradient(90deg, #079669, #07966900);
 }
 .hero-copy > p {
-  font-size: 0.95rem;
+  font-size: var(--type-body);
   max-width: 480px;
   line-height: 1.85;
 }
@@ -437,7 +437,7 @@ summary:focus-visible {
   display: flex;
   gap: 21px;
   margin-top: 20px;
-  font-size: 0.68rem;
+  font-size: var(--type-ui);
   color: #556c7d;
 }
 .hero-checks span {
@@ -470,7 +470,7 @@ summary:focus-visible {
   color: var(--green);
 }
 .hero-bottom-note p {
-  font-size: 0.7rem;
+  font-size: var(--type-small);
   line-height: 1.65;
 }
 .hero-bottom-note strong {
@@ -502,7 +502,7 @@ summary:focus-visible {
   padding: 12px 15px;
   border-radius: 5px;
   letter-spacing: 0.1em;
-  font-size: 0.56rem;
+  font-size: var(--type-ui);
   font-weight: 800;
 }
 .image-label > span {
@@ -536,12 +536,12 @@ summary:focus-visible {
 }
 .hero-float strong {
   display: block;
-  font-size: 0.86rem;
+  font-size: var(--type-ui);
   letter-spacing: -0.02em;
 }
 .hero-float div > span {
   display: block;
-  font-size: 0.68rem;
+  font-size: var(--type-ui);
   color: var(--muted);
   margin-top: 6px;
 }
@@ -557,7 +557,7 @@ summary:focus-visible {
   position: absolute;
   bottom: 6px;
   left: 17px;
-  font-size: 0.58rem;
+  font-size: var(--type-ui);
   letter-spacing: 0.05em;
   color: white;
   display: flex;
@@ -577,7 +577,7 @@ summary:focus-visible {
   justify-content: center;
   gap: 12px;
   border-right: 1px solid var(--border);
-  font-size: 0.78rem;
+  font-size: var(--type-small);
   font-weight: 600;
 }
 .trust-strip > div:last-child {
@@ -598,7 +598,7 @@ summary:focus-visible {
   margin-bottom: 12px;
 }
 .section-heading p {
-  font-size: 0.88rem;
+  font-size: var(--type-body);
   margin-top: 13px;
 }
 .section-heading > .text-link {
@@ -616,7 +616,7 @@ summary:focus-visible {
   border-radius: 5px;
   background: white;
   padding: 10px 16px;
-  font-size: 0.72rem;
+  font-size: var(--type-ui);
   font-weight: 600;
   color: #536779;
   transition: background 0.2s;
@@ -676,13 +676,13 @@ summary:focus-visible {
   background: #edf8f3;
 }
 .service-card h3 {
-  font-size: 1rem;
+  font-size: var(--type-h3);
   font-weight: 800;
   margin-bottom: 9px;
   letter-spacing: -0.025em;
 }
 .service-card p {
-  font-size: 0.77rem;
+  font-size: var(--type-body);
   line-height: 1.75;
   margin-bottom: 24px;
   max-width: 220px;
@@ -691,7 +691,7 @@ summary:focus-visible {
   display: flex;
   align-items: center;
   gap: 8px;
-  font-size: 0.69rem;
+  font-size: var(--type-ui);
   color: var(--blue);
   font-weight: 700;
   margin-top: auto;
@@ -721,11 +721,11 @@ summary:focus-visible {
   flex-shrink: 0;
 }
 .call-banner h2 {
-  font-size: 1.45rem;
+  font-size: var(--type-h2);
   letter-spacing: -0.035em;
 }
 .call-banner p {
-  font-size: 0.81rem;
+  font-size: var(--type-body);
   margin-top: 7px;
 }
 .call-banner .call-cta {
@@ -767,11 +767,11 @@ summary:focus-visible {
   letter-spacing: -0.06em;
 }
 .step h3 {
-  font-size: 1.05rem;
+  font-size: var(--type-h3);
   margin-bottom: 12px;
 }
 .step p {
-  font-size: 0.82rem;
+  font-size: var(--type-body);
   line-height: 1.85;
 }
 .how-bottom {
@@ -784,7 +784,7 @@ summary:focus-visible {
   border-top: 1px solid #e1e9ef;
 }
 .how-bottom > span {
-  font-size: 0.75rem;
+  font-size: var(--type-ui);
   color: #516777;
   display: flex;
   gap: 8px;
@@ -832,14 +832,14 @@ summary:focus-visible {
   font-weight: 800;
 }
 .why-grid h2 {
-  font-size: 2.05rem;
+  font-size: var(--type-h2);
   line-height: 1.35;
 }
 .text-green {
   color: var(--green);
 }
 .intro {
-  font-size: 0.9rem;
+  font-size: var(--type-ui);
   margin-top: 20px;
 }
 .value-list {
@@ -862,12 +862,12 @@ summary:focus-visible {
   color: var(--green);
 }
 .value-list h3 {
-  font-size: 0.86rem;
+  font-size: var(--type-h3);
   letter-spacing: -0.015em;
   margin-bottom: 5px;
 }
 .value-list p {
-  font-size: 0.77rem;
+  font-size: var(--type-body);
   line-height: 1.75;
 }
 .quote-teaser {
@@ -880,10 +880,10 @@ summary:focus-visible {
   align-items: center;
 }
 .quote-teaser h2 {
-  font-size: 2.5rem;
+  font-size: var(--type-h2);
 }
 .quote-teaser-grid > div > p {
-  font-size: 0.89rem;
+  font-size: var(--type-body);
   margin-top: 18px;
   max-width: 420px;
 }
@@ -891,7 +891,7 @@ summary:focus-visible {
   display: flex;
   gap: 8px;
   align-items: center;
-  font-size: 0.7rem;
+  font-size: var(--type-small);
   color: #577087;
   margin-top: 23px;
 }
@@ -906,22 +906,22 @@ summary:focus-visible {
   border: 1px solid #e2ebf2;
 }
 .step-tag {
-  font-size: 0.59rem;
+  font-size: var(--type-ui);
   font-weight: 800;
   letter-spacing: 0.1em;
   color: var(--green);
 }
 .quote-start-card h3 {
-  font-size: 1.4rem;
+  font-size: var(--type-h3);
   margin-top: 15px;
 }
 .quote-start-card > p {
-  font-size: 0.78rem;
+  font-size: var(--type-body);
   margin: 10px 0 20px;
 }
 .quote-start-card label {
   display: block;
-  font-size: 0.75rem;
+  font-size: var(--type-ui);
   font-weight: 700;
   margin-bottom: 8px;
 }
@@ -935,14 +935,14 @@ summary:focus-visible {
   border: 1px solid #cbd7e1;
   border-radius: 6px;
   padding: 14px;
-  font-size: 0.8rem;
+  font-size: var(--type-ui);
 }
 .zip-row .button {
   white-space: nowrap;
   padding-inline: 17px;
 }
 .quote-start-card small {
-  font-size: 0.64rem;
+  font-size: var(--type-small);
   color: #718292;
   display: block;
   margin-top: 17px;
@@ -970,16 +970,16 @@ summary:focus-visible {
   margin-bottom: 23px;
 }
 .guide-preview .eyebrow {
-  font-size: 0.6rem;
+  font-size: var(--type-meta);
   margin-bottom: 10px;
 }
 .guide-preview h3 {
-  font-size: 1.12rem;
+  font-size: var(--type-h3);
   line-height: 1.5;
   margin-bottom: 25px;
 }
 .guide-preview .text-link {
-  font-size: 0.73rem;
+  font-size: var(--type-ui);
   margin-top: auto;
 }
 .guide-preview:hover {
@@ -994,7 +994,7 @@ summary:focus-visible {
   gap: 90px;
 }
 .faq-grid > div > p {
-  font-size: 0.88rem;
+  font-size: var(--type-body);
   margin: 20px 0;
 }
 .faq-list details {
@@ -1009,7 +1009,7 @@ summary:focus-visible {
   align-items: center;
   justify-content: space-between;
   gap: 20px;
-  font-size: 0.88rem;
+  font-size: var(--type-ui);
   font-weight: 700;
   cursor: pointer;
   list-style: none;
@@ -1027,7 +1027,7 @@ summary:focus-visible {
   transform: rotate(45deg);
 }
 .faq-list details p {
-  font-size: 0.81rem;
+  font-size: var(--type-body);
   margin-top: 16px;
   line-height: 1.9;
   max-width: 95%;
@@ -1044,11 +1044,11 @@ summary:focus-visible {
   color: #adf2d2;
 }
 .final-cta h2 {
-  font-size: 2.7rem;
+  font-size: var(--type-h2);
 }
 .final-cta p {
   color: #d0e4eb;
-  font-size: 0.9rem;
+  font-size: var(--type-body);
   margin-top: 18px;
 }
 .cta-row {
@@ -1063,7 +1063,7 @@ summary:focus-visible {
 }
 .final-note {
   display: block;
-  font-size: 0.69rem;
+  font-size: var(--type-small);
   color: #c2e0df;
   margin-top: 23px;
 }
@@ -1084,12 +1084,12 @@ footer p {
   border-bottom: 1px solid #ffffff18;
 }
 .footer-top .eyebrow {
-  font-size: 0.6rem;
+  font-size: var(--type-meta);
   color: #81cbb1;
   margin-bottom: 9px;
 }
 .footer-top h2 {
-  font-size: 1.45rem;
+  font-size: var(--type-h2);
   font-weight: 700;
 }
 .footer-grid {
@@ -1109,7 +1109,7 @@ footer p {
   color: #7bddb4;
 }
 .footer-brand p {
-  font-size: 0.76rem;
+  font-size: var(--type-body);
   margin-top: 19px;
   line-height: 1.9;
   max-width: 265px;
@@ -1119,11 +1119,11 @@ footer p {
   gap: 8px;
   align-items: center;
   color: #93b6c0;
-  font-size: 0.64rem;
+  font-size: var(--type-small);
   margin-top: 23px;
 }
 .footer-grid h3 {
-  font-size: 0.8rem;
+  font-size: var(--type-h3);
   letter-spacing: 0;
   margin-bottom: 19px;
 }
@@ -1139,7 +1139,7 @@ footer p {
   color: white;
 }
 .disclaimer {
-  font-size: 0.64rem;
+  font-size: var(--type-small);
   line-height: 1.9;
   border-top: 1px solid #ffffff18;
   padding-top: 25px;
@@ -1147,7 +1147,7 @@ footer p {
 .footer-bottom {
   display: flex;
   justify-content: space-between;
-  font-size: 0.62rem;
+  font-size: var(--type-ui);
   color: #8198ab;
   padding: 25px 0;
 }
@@ -1159,7 +1159,7 @@ footer p {
   align-items: center;
   flex-wrap: wrap;
   gap: 10px;
-  font-size: 0.73rem;
+  font-size: var(--type-meta);
   color: #637b8b;
   padding: 26px 0;
 }
@@ -1210,17 +1210,17 @@ footer p {
     min-height: 530px;
   }
   .nav-links {
-    font-size: 0.81rem;
+    font-size: var(--type-ui);
     gap: 30px;
   }
   .hero h1 {
-    font-size: 4.5rem;
+    font-size: var(--type-h1);
   }
   .hero-copy > p {
-    font-size: 1rem;
+    font-size: var(--type-body);
   }
   .hero-checks {
-    font-size: 0.75rem;
+    font-size: var(--type-ui);
   }
   .hero-float {
     bottom: 40px;
@@ -1235,7 +1235,7 @@ footer p {
   }
   .nav-links {
     gap: 15px;
-    font-size: 0.68rem;
+    font-size: var(--type-ui);
   }
   .nav > .call-cta {
     padding-inline: 12px;
@@ -1253,20 +1253,20 @@ footer p {
     min-height: 49px;
   }
   .hero h1 {
-    font-size: 3.05rem;
+    font-size: var(--type-h1);
   }
   .hero-visual {
     min-height: 490px;
   }
   .hero-checks {
     gap: 10px;
-    font-size: 0.63rem;
+    font-size: var(--type-ui);
   }
   .why-grid {
     gap: 45px;
   }
   .why-grid h2 {
-    font-size: 1.8rem;
+    font-size: var(--type-h2);
   }
   .quote-teaser-grid {
     gap: 40px;
@@ -1315,7 +1315,7 @@ footer p {
     align-items: stretch;
     flex-direction: column;
     gap: 0;
-    font-size: 0.95rem;
+    font-size: var(--type-ui);
   }
   .nav-links > a,
   .services-nav > button {
@@ -1331,14 +1331,14 @@ footer p {
     margin-block: 8px;
   }
   .mega-heading {
-    font-size: 0.85rem;
+    font-size: var(--type-ui);
     gap: 15px;
   }
   .mega-columns {
     grid-template-columns: repeat(2, 1fr);
   }
   .hero h1 {
-    font-size: 2.6rem;
+    font-size: var(--type-h1);
   }
   .hero-grid {
     gap: 20px;
@@ -1357,10 +1357,10 @@ footer p {
     gap: 9px;
   }
   .hero-float strong {
-    font-size: 0.73rem;
+    font-size: var(--type-ui);
   }
   .hero-float div > span {
-    font-size: 0.6rem;
+    font-size: var(--type-ui);
   }
   .float-check {
     display: none;
@@ -1369,7 +1369,7 @@ footer p {
     gap: 12px;
   }
   .trust-strip > div {
-    font-size: 0.63rem;
+    font-size: var(--type-small);
     gap: 8px;
   }
   .trust-strip svg {
@@ -1416,7 +1416,7 @@ footer p {
     padding-block: 65px;
   }
   .footer-top h2 {
-    font-size: 1.2rem;
+    font-size: var(--type-h2);
   }
 }
 @media (max-width: 700px) {
@@ -1424,7 +1424,7 @@ footer p {
     width: calc(100% - 40px);
   }
   .utility {
-    font-size: 0.6rem;
+    font-size: var(--type-meta);
     padding: 8px 0;
   }
   .nav,
@@ -1454,16 +1454,16 @@ footer p {
     padding: 0;
   }
   .hero .eyebrow {
-    font-size: 0.59rem;
+    font-size: var(--type-meta);
     margin-bottom: 15px;
   }
   .hero h1 {
-    font-size: clamp(2.4rem, 8vw, 3.6rem);
+    font-size: var(--type-h1);
     line-height: 1.15;
     margin-bottom: 22px;
   }
   .hero-copy > p {
-    font-size: 0.84rem;
+    font-size: var(--type-body);
     line-height: 1.8;
     max-width: 550px;
   }
@@ -1473,24 +1473,24 @@ footer p {
     margin-top: 23px;
   }
   .hero-actions .call-cta {
-    font-size: 0.72rem;
+    font-size: var(--type-ui);
     flex: 1;
     padding: 13px 12px;
     gap: 10px;
   }
   .hero-actions .call-cta small {
-    font-size: 0.62rem;
+    font-size: var(--type-small);
   }
   .hero-actions .call-icon svg {
     width: 20px;
   }
   .hero-actions .button {
-    font-size: 0.72rem;
+    font-size: var(--type-ui);
     padding-inline: 14px;
     gap: 8px;
   }
   .hero-checks {
-    font-size: 0.63rem;
+    font-size: var(--type-ui);
     gap: 17px;
     margin-top: 15px;
   }
@@ -1509,7 +1509,7 @@ footer p {
     top: 14px;
     left: 14px;
     padding: 8px 11px;
-    font-size: 0.5rem;
+    font-size: var(--type-ui);
   }
   .hero-float {
     left: 12px;
@@ -1518,10 +1518,10 @@ footer p {
     padding: 12px;
   }
   .hero-float strong {
-    font-size: 0.77rem;
+    font-size: var(--type-ui);
   }
   .hero-float div > span {
-    font-size: 0.62rem;
+    font-size: var(--type-ui);
   }
   .float-icon {
     width: 36px;
@@ -1534,7 +1534,7 @@ footer p {
     display: block;
   }
   .image-corner-label {
-    font-size: 0.5rem;
+    font-size: var(--type-ui);
     bottom: 3px;
   }
   .trust-strip {
@@ -1543,7 +1543,7 @@ footer p {
     padding-block: 25px;
   }
   .trust-strip > div {
-    font-size: 0.61rem;
+    font-size: var(--type-small);
     justify-content: flex-start;
     gap: 8px;
   }
@@ -1561,18 +1561,18 @@ footer p {
     margin-bottom: 24px;
   }
   .section-heading h2 {
-    font-size: 1.8rem;
+    font-size: var(--type-h2);
   }
   .section-heading p {
-    font-size: 0.81rem;
+    font-size: var(--type-body);
     margin-top: 12px;
   }
   .section-heading > .text-link {
     margin-top: 19px;
-    font-size: 0.78rem;
+    font-size: var(--type-ui);
   }
   .eyebrow {
-    font-size: 0.6rem;
+    font-size: var(--type-meta);
     margin-bottom: 12px;
   }
   .filter-tabs {
@@ -1585,7 +1585,7 @@ footer p {
   .filter-tabs button {
     white-space: nowrap;
     padding: 10px 13px;
-    font-size: 0.65rem;
+    font-size: var(--type-ui);
     min-height: 42px;
   }
   .services-grid {
@@ -1610,21 +1610,21 @@ footer p {
     width: 15px;
   }
   .service-card h3 {
-    font-size: 0.88rem;
+    font-size: var(--type-h3);
   }
   .service-card p {
-    font-size: 0.7rem;
+    font-size: var(--type-body);
     margin-bottom: 17px;
   }
   .service-more {
-    font-size: 0.61rem;
+    font-size: var(--type-ui);
     gap: 5px;
   }
   .center-link {
     padding-top: 24px;
   }
   .center-link .text-link {
-    font-size: 0.75rem;
+    font-size: var(--type-ui);
   }
   .call-banner {
     padding: 23px;
@@ -1643,10 +1643,10 @@ footer p {
     min-width: 0;
   }
   .call-banner h2 {
-    font-size: 1.16rem;
+    font-size: var(--type-h2);
   }
   .call-banner p {
-    font-size: 0.74rem;
+    font-size: var(--type-body);
     line-height: 1.7;
   }
   .call-banner .call-cta {
@@ -1672,10 +1672,10 @@ footer p {
     font-size: 2.5rem;
   }
   .step h3 {
-    font-size: 1rem;
+    font-size: var(--type-h3);
   }
   .step p {
-    font-size: 0.79rem;
+    font-size: var(--type-body);
   }
   .how-bottom {
     flex-direction: column;
@@ -1684,7 +1684,7 @@ footer p {
     padding-top: 23px;
   }
   .how-bottom > span {
-    font-size: 0.68rem;
+    font-size: var(--type-ui);
   }
   .why-grid {
     grid-template-columns: 1fr;
@@ -1701,38 +1701,38 @@ footer p {
   .why-image-caption {
     bottom: 25px;
     left: 23px;
-    font-size: 1.2rem;
+    font-size: var(--type-small);
   }
   .why-grid h2 {
-    font-size: 1.75rem;
+    font-size: var(--type-h2);
   }
   .intro {
-    font-size: 0.81rem;
+    font-size: var(--type-ui);
   }
   .why-grid .text-link {
-    font-size: 0.75rem;
+    font-size: var(--type-ui);
   }
   .quote-teaser-grid {
     grid-template-columns: 1fr;
     gap: 28px;
   }
   .quote-teaser h2 {
-    font-size: 2rem;
+    font-size: var(--type-h2);
   }
   .quote-teaser-grid > div > p {
-    font-size: 0.82rem;
+    font-size: var(--type-body);
   }
   .quote-start-card {
     padding: 25px;
   }
   .quote-start-card h3 {
-    font-size: 1.25rem;
+    font-size: var(--type-h3);
   }
   .zip-row {
     flex-direction: row;
   }
   .zip-row .button {
-    font-size: 0.73rem;
+    font-size: var(--type-ui);
     padding: 12px;
   }
   .guide-preview-grid {
@@ -1754,7 +1754,7 @@ footer p {
   }
   .guide-preview h3 {
     max-width: 85%;
-    font-size: 1.05rem;
+    font-size: var(--type-h3);
     margin-bottom: 18px;
   }
   .faq-grid {
@@ -1765,23 +1765,23 @@ footer p {
     display: none;
   }
   .faq-grid > div > p {
-    font-size: 0.81rem;
+    font-size: var(--type-body);
     margin: 15px 0;
   }
   .faq-list summary {
-    font-size: 0.82rem;
+    font-size: var(--type-ui);
   }
   .faq-list details p {
-    font-size: 0.77rem;
+    font-size: var(--type-body);
   }
   .final-cta {
     padding-block: 53px;
   }
   .final-cta h2 {
-    font-size: 2rem;
+    font-size: var(--type-h2);
   }
   .final-cta p {
-    font-size: 0.81rem;
+    font-size: var(--type-body);
   }
   .cta-row {
     flex-direction: column;
@@ -1789,7 +1789,7 @@ footer p {
     padding-inline: 20px;
   }
   .final-note {
-    font-size: 0.64rem;
+    font-size: var(--type-small);
   }
   footer {
     padding-top: 35px;
@@ -1801,7 +1801,7 @@ footer p {
     gap: 22px;
   }
   .footer-top h2 {
-    font-size: 1.35rem;
+    font-size: var(--type-h2);
   }
   .footer-top .call-cta {
     width: 100%;
@@ -1849,18 +1849,18 @@ footer p {
   }
   .mobile-sticky > .button {
     flex: 1;
-    font-size: 0.73rem;
+    font-size: var(--type-ui);
     padding: 12px 8px;
     gap: 7px;
   }
   .mobile-sticky .call-cta small {
-    font-size: 0.54rem;
+    font-size: var(--type-small);
   }
   .mobile-sticky .call-cta.compact {
     padding: 9px 10px;
   }
   .breadcrumbs {
-    font-size: 0.65rem;
+    font-size: var(--type-meta);
     padding: 20px 0;
     gap: 8px;
   }
@@ -1870,38 +1870,38 @@ footer p {
     width: calc(100% - 30px);
   }
   .hero h1 {
-    font-size: 2.2rem;
+    font-size: var(--type-h1);
   }
   .hero-actions .call-cta {
-    font-size: 0.63rem;
+    font-size: var(--type-ui);
     gap: 7px;
     padding-inline: 9px;
   }
   .hero-actions .call-cta small {
-    font-size: 0.55rem;
+    font-size: var(--type-small);
   }
   .hero-actions .button {
-    font-size: 0.64rem;
+    font-size: var(--type-ui);
     padding-inline: 10px;
   }
   .hero-checks {
     gap: 10px;
-    font-size: 0.57rem;
+    font-size: var(--type-ui);
   }
   .service-card {
     padding: 16px 12px;
   }
   .service-card h3 {
-    font-size: 0.81rem;
+    font-size: var(--type-h3);
   }
   .service-more {
-    font-size: 0.55rem;
+    font-size: var(--type-ui);
   }
   .zip-row {
     flex-direction: column;
   }
   .hero-float strong {
-    font-size: 0.69rem;
+    font-size: var(--type-ui);
   }
 }
 @media (prefers-reduced-motion: reduce) {

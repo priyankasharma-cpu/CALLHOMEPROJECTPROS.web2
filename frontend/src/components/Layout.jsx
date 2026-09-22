@@ -37,6 +37,17 @@ export default function Layout() {
   const location = useLocation();
   const menuButton = useRef();
   const navRef = useRef();
+  const stickyRef = useRef();
+  useEffect(() => {
+    const observer = new ResizeObserver(([entry]) => {
+      document.documentElement.style.setProperty(
+        "--mobile-actions-height",
+        `${entry.target.getBoundingClientRect().height}px`,
+      );
+    });
+    observer.observe(stickyRef.current);
+    return () => observer.disconnect();
+  }, []);
   useEffect(() => {
     setMenu(false);
     setMega(false);
@@ -53,7 +64,7 @@ export default function Layout() {
   }, []);
   useEffect(() => {
     function close(e) {
-      if (e.key === "Escape") {
+      if (e.key === "Escape" && (menu || mega) && !e.target.closest("dialog")) {
         setMega(false);
         setMenu(false);
         menuButton.current?.focus();
@@ -68,7 +79,7 @@ export default function Layout() {
       document.removeEventListener("keydown", close);
       document.removeEventListener("pointerdown", outside);
     };
-  }, []);
+  }, [menu, mega]);
   return (
     <>
       <a className="skip-link" href="#main">
@@ -170,7 +181,7 @@ export default function Layout() {
         <Outlet />
       </main>
       <Footer />
-      <div className="mobile-sticky">
+      <div className="mobile-sticky" ref={stickyRef}>
         <CallCTA compact location="mobile_sticky_call" />
         <Link className="button secondary" to="/quote">
           Get Free Quote <ArrowRight size={16} />

@@ -42,7 +42,7 @@ export default function Quote() {
             <div className="quote-call-box">
               <PhoneCall size={27} />
               <h3>Rather talk it through?</h3>
-              <p>Start with a conversation when our phone line is available.</p>
+              <p>Call to discuss your project, location, and next steps.</p>
               <CallCTA location="lead_form_call" />
             </div>
             <img

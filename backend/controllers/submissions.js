@@ -5,10 +5,11 @@ export function submissionController(Model) {
   return async (req, res, next) => {
     try {
       const disclosureConfigured = Boolean(
-        config.consentText && config.consentVersion,
+        Model.modelName === "Lead" &&
+        config.consentText &&
+        config.consentVersion,
       );
-      const requiresDisclosure = Model.modelName !== "Lead";
-      if (!config.leadsEnabled || (requiresDisclosure && !disclosureConfigured))
+      if (!config.leadsEnabled)
         return res.status(503).json({
           success: false,
           message:
@@ -65,7 +66,10 @@ export function submissionController(Model) {
           });
         return res.status(status).json({
           success: true,
-          message: "Lead submitted successfully.",
+          message:
+            Model.modelName === "Lead"
+              ? "Lead submitted successfully."
+              : "Inquiry received successfully.",
           data: { reference: record._id.toString() },
         });
       };

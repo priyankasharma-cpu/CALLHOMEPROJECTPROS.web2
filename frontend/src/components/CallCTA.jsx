@@ -40,7 +40,7 @@ export default function CallCTA({
             ? numberFirst
               ? "Talk to a Home Project Specialist"
               : siteConfig.phoneNumber
-            : "Phone line coming soon"}
+            : "Start your project online"}
         </small>
       </span>
       {!compact && <ArrowUpRight className="call-arrow" size={20} />}
@@ -66,8 +66,8 @@ export default function CallCTA({
     <button
       type="button"
       className={classes}
-      disabled
-      aria-label="Phone assistance is not available yet"
+      onClick={() => window.location.assign("/quote")}
+      aria-label="Start a project request online"
     >
       {content}
     </button>

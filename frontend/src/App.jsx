@@ -5,6 +5,8 @@ import Home from "./pages/Home";
 import TrackingManager from "./components/TrackingManager";
 import SEOHead from "./components/SEOHead";
 import ProjectTools from "./components/ProjectTools";
+import AccessibilityMenu from "./components/AccessibilityMenu/AccessibilityMenu";
+import CallPopup from "./components/CallPopup/CallPopup";
 const Services = lazy(() => import("./pages/Services"));
 const ServiceDetail = lazy(() => import("./pages/ServiceDetail"));
 const Quote = lazy(() => import("./pages/Quote"));
@@ -60,6 +62,8 @@ export default function App() {
           </Route>
         </Routes>
       </Suspense>
+      <AccessibilityMenu />
+      <CallPopup />
     </>
   );
 }

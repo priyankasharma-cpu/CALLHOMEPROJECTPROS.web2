@@ -97,7 +97,7 @@
   transform: rotate(65deg);
 }
 .confirmation-eyebrow {
-  font-size: 0.65rem;
+  font-size: var(--type-meta);
   letter-spacing: 0.14em;
   font-weight: 800;
   color: #047857;
@@ -110,11 +110,11 @@
 }
 .confirmation-received {
   font-weight: 700;
-  font-size: 0.96rem;
+  font-size: var(--type-ui);
   margin: 0;
 }
 .confirmation-explanation {
-  font-size: 0.85rem;
+  font-size: var(--type-ui);
   color: #607186;
   line-height: 1.7;
   max-width: 580px;
@@ -132,13 +132,13 @@
   margin: 0 0 15px;
 }
 .confirmation-summary dt {
-  font-size: 0.66rem;
+  font-size: var(--type-ui);
   text-transform: uppercase;
   letter-spacing: 0.07em;
   color: #63758a;
 }
 .confirmation-summary dd {
-  font-size: 0.82rem;
+  font-size: var(--type-ui);
   font-weight: 700;
   margin: 4px 0 0;
 }
@@ -157,7 +157,7 @@
   gap: 10px;
   padding: 0 6px;
   border-right: 1px solid #d5e6ed;
-  font-size: 0.71rem;
+  font-size: var(--type-ui);
   line-height: 1.5;
   text-align: left;
 }
@@ -182,7 +182,7 @@
   align-items: center;
   justify-content: center;
   gap: 6px;
-  font-size: 0.66rem;
+  font-size: var(--type-small);
   line-height: 1.6;
   color: #64748b;
   margin: 13px 0;
@@ -207,7 +207,7 @@
   letter-spacing: -0.025em;
 }
 .confirmation-call-panel > p {
-  font-size: 0.8rem;
+  font-size: var(--type-body);
   margin: 0 0 17px;
   color: #617286;
 }
@@ -224,7 +224,7 @@
   letter-spacing: -0.02em;
 }
 .call-confirmation .call-text small {
-  font-size: 0.78rem;
+  font-size: var(--type-small);
 }
 .call-confirmation .call-arrow {
   margin-left: auto;
@@ -269,7 +269,7 @@
   justify-content: center;
   gap: 16px;
   margin-top: 15px;
-  font-size: 0.62rem;
+  font-size: var(--type-small);
   color: #486575;
 }
 .confirmation-benefits > span {
@@ -284,7 +284,7 @@
   flex-shrink: 0;
 }
 .confirmation-brand {
-  font-size: 0.74rem;
+  font-size: var(--type-ui);
   color: #63748b;
   margin: 19px 0 0;
 }
@@ -380,7 +380,7 @@
     height: 56px;
   }
   .confirmation-explanation {
-    font-size: 0.78rem;
+    font-size: var(--type-ui);
   }
   .confirmation-summary {
     padding: 12px;
@@ -388,19 +388,19 @@
     grid-template-columns: 1fr 0.55fr 1fr;
   }
   .confirmation-summary dd {
-    font-size: 0.7rem;
+    font-size: var(--type-ui);
   }
   .confirmation-status > span {
     flex-direction: column;
     text-align: center;
     gap: 6px;
-    font-size: 0.61rem;
+    font-size: var(--type-ui);
   }
   .confirmation-call-panel {
     padding: 19px 12px;
   }
   .confirmation-call-panel h3 {
-    font-size: 1.15rem;
+    font-size: var(--type-ui);
   }
   .confirmation-call-panel .call-confirmation {
     padding: 15px 12px;
@@ -411,7 +411,7 @@
     font-size: clamp(0.96rem, 4.5vw, 1.4rem);
   }
   .call-confirmation .call-text small {
-    font-size: 0.62rem;
+    font-size: var(--type-small);
     line-height: 1.5;
   }
   .call-confirmation .call-icon {
@@ -426,11 +426,11 @@
   .confirmation-benefits {
     flex-wrap: wrap;
     gap: 8px 12px;
-    font-size: 0.57rem;
+    font-size: var(--type-small);
   }
   .confirmation-privacy {
     align-items: flex-start;
-    font-size: 0.59rem;
+    font-size: var(--type-small);
   }
   .confirmation-close {
     top: 9px;

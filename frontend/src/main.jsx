@@ -9,6 +9,8 @@ import "@fontsource/plus-jakarta-sans/latin-800.css";
 import "./styles/global.css";
 import "./styles/pages.css";
 import "./styles/premium.css";
+import "./styles/typography.css";
+import { applyPreferences, readPreferences } from "./utils/readability";
 import App from "./App";
 class ErrorBoundary extends React.Component {
   state = { failed: false };
@@ -29,6 +31,7 @@ class ErrorBoundary extends React.Component {
     );
   }
 }
+applyPreferences(readPreferences());
 const root =
   import.meta.hot?.data.root || createRoot(document.getElementById("root"));
 if (import.meta.hot) import.meta.hot.data.root = root;

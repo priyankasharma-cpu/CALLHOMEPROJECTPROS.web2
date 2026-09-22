@@ -5,7 +5,7 @@ import {
   Mail,
   MessageSquare,
   ShieldCheck,
-  Clock3,
+  ClipboardList,
 } from "lucide-react";
 import CallCTA from "../components/CallCTA";
 import ContactForm from "../components/ContactForm";
@@ -52,21 +52,26 @@ export default function ContactContent() {
               <br /> about your home.
             </h2>
             <p>
-              Explain what you have in mind. Ask a question. Find a clearer next
-              step.
+              Tell us what you need help with and where the project is located.
+              Call to discuss your project and take the next step toward getting
+              the service you need.
             </p>
             <CallCTA location="contact_page_call" variant="section" />
             <span className="contact-hours">
-              <Clock3 size={16} />
+              <ClipboardList size={16} />
               {siteConfig.businessHours ||
-                "Phone availability will be shown when our line opens."}
+                "Have your project type and ZIP code ready so we can better understand your request."}
             </span>
           </div>
           <div className="contact-support-card">
             <MessageSquare size={25} />
             <div>
-              <h3>Ready to describe your project?</h3>
-              <p>Our guided request helps you share the right details.</p>
+              <h3>Ready to Get Started?</h3>
+              <p>
+                Tell us about your home project through our guided request form.
+                Share a few project details so your request can be reviewed and
+                the appropriate next step can be determined.
+              </p>
               <Link to="/quote" className="text-link">
                 Start a Project Request <ArrowUpRight size={17} />
               </Link>
@@ -75,7 +80,7 @@ export default function ContactContent() {
           <div className="contact-support-card">
             <Mail size={25} />
             <div>
-              <h3>General support</h3>
+              <h3>Questions About Your Project?</h3>
               {siteConfig.supportEmail ? (
                 <a
                   className="text-link"
@@ -85,8 +90,10 @@ export default function ContactContent() {
                 </a>
               ) : (
                 <p>
-                  Support contact details are being finalized. Inquiries will
-                  open once those details and our privacy information are ready.
+                  Have a question before getting started? Send us an inquiry
+                  with the details of your project or service needs. For
+                  project-specific requests, you can also use our guided project
+                  request form.
                 </p>
               )}
             </div>

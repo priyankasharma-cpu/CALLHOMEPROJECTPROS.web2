@@ -2,7 +2,7 @@ export const homeFAQs = [
   {
     question: "How does Call Home Project Pros work?",
     answer:
-      "Start by exploring a service, calling when phone assistance is available, or completing a project request. Project details help identify an appropriate next step with a service provider where available. You decide whether to proceed after discussing the work.",
+      "Start by exploring a service, calling our team, or completing a project request. Project details help identify an appropriate next step with a service provider where available. You decide whether to proceed after discussing the work.",
   },
   {
     question: "Is requesting an estimate free?",
@@ -17,12 +17,12 @@ export const homeFAQs = [
   {
     question: "What happens after I submit my request?",
     answer:
-      "When request collection is enabled, the project and contact details you authorize are used to handle your inquiry according to the disclosure shown before submission. Availability and response times vary; submitting does not guarantee a match or an estimate.",
+      "After submission, you receive a confirmation that your request was received. Your project and contact details are used to review your request and help determine the appropriate next step. Availability and response times vary; submitting does not guarantee a match or an estimate.",
   },
   {
     question: "Can I call instead of filling out a form?",
     answer:
-      "Yes, once our phone line is available, you can use the call buttons to discuss your project. If a call button says “Phone line coming soon,” telephone assistance has not yet been enabled.",
+      "Yes. Use any Call Now button to speak with our home project team. Have your ZIP code, project type, and a short description ready.",
   },
   {
     question: "What home projects can I explore?",
@@ -32,7 +32,7 @@ export const homeFAQs = [
   {
     question: "How is my information handled?",
     answer:
-      "Review the privacy policy and the disclosure at the final form step before submitting. Business-specific data handling details must be finalized before lead collection is enabled. Do not include payment details or other sensitive information in project descriptions.",
+      "Information submitted through our forms is used to process your request and support your inquiry. Read our Privacy Policy for details about form information and website preferences. Do not include payment details or other sensitive information in project descriptions.",
   },
   {
     question: "How quickly will a provider respond?",

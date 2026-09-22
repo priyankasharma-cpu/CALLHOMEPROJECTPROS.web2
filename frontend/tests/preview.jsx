@@ -7,6 +7,9 @@ import "@fontsource/plus-jakarta-sans/latin-400.css";
 import "@fontsource/plus-jakarta-sans/latin-700.css";
 import "../src/styles/global.css";
 import "../src/styles/premium.css";
+import "../src/styles/typography.css";
+import { applyPreferences, readPreferences } from "../src/utils/readability";
+applyPreferences(readPreferences());
 function Preview() {
   const [open, setOpen] = useState(false);
   return (
@@ -29,7 +32,9 @@ function Preview() {
     </main>
   );
 }
-createRoot(document.getElementById("root")).render(
+const root = import.meta.hot?.data.root || createRoot(document.getElementById("root"));
+if (import.meta.hot) import.meta.hot.data.root = root;
+root.render(
   <BrowserRouter>
     <Preview />
   </BrowserRouter>,

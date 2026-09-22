@@ -98,7 +98,7 @@ export default function ServiceDetail() {
                 <Link className="hero-quote-link" to={"/quote?service=" + slug}>
                   Start online{" "}
                   <strong>
-                    Request a Quote <ArrowRight size={17} />
+                    Start a Project Request <ArrowRight size={17} />
                   </strong>
                 </Link>
               </div>
@@ -287,7 +287,7 @@ export default function ServiceDetail() {
             </p>
             <div className="quote-call-box">
               <h3>Prefer to talk?</h3>
-              <p>Start with a conversation when our phone line is available.</p>
+              <p>Call to discuss your project, location, and next steps.</p>
               <CallCTA location={slug + "_form_call"} service={slug} />
             </div>
           </aside>

@@ -34,8 +34,11 @@ export default function AboutContent() {
                 <br /> start <span className="gradient-text">at home.</span>
               </h1>
               <p>
-                We believe finding a starting point for your home project should
-                feel simple, human, and clear.
+                Call Home Project Pros helps homeowners and property
+                decision-makers start the conversation around repairs,
+                replacements, installations, maintenance, and larger
+                improvements. Choose a service, describe your project, and call
+                or submit a request for the next step.
               </p>
               <CallCTA location="about_hero_call" variant="hero" />
               <div className="hero-assurances">

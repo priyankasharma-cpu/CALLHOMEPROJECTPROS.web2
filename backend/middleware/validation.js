@@ -78,12 +78,27 @@ export const inquirySchema = Joi.object({
     .email({ tlds: { allow: false } })
     .max(254)
     .required(),
-  topic: Joi.string()
-    .valid("General question", "Project request support", "Privacy inquiry")
+  inquiryType: Joi.string()
+    .valid(
+      "General question",
+      "Service question",
+      "Project question",
+      "Existing request",
+      "Website support",
+      "Project request support",
+      "Privacy inquiry",
+    )
     .required(),
   message: text(3000, 10).required(),
   ...common,
-}).unknown(false);
+  consent: Joi.boolean().strict().default(false),
+  consentVersion: text(100, 0).allow("").default(""),
+  phone: leadSchema.extract("phone").optional().allow(""),
+  landingPage: optional,
+  referrer: optional,
+})
+  .rename("topic", "inquiryType")
+  .unknown(false);
 export function validate(schema) {
   return (req, res, next) => {
     const { value, error } = schema.validate(req.body, {
